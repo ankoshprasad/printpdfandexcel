@@ -49,33 +49,29 @@ export class HomeComponent implements OnInit{
     let finalY = 0;
     doc.autoTable({
       html: '#imgTable',
-      bodyStyles: { minCellHeight: 10 },
+      bodyStyles: { minCellHeight: 8 },
       theme: 'grid',
       styles: { valign: 'middle', overflow: 'linebreak', halign: 'center', minCellHeight: 5 },
       pageBreak: 'avoid',
-      columnStyles: {
-        2: { cellWidth: 100, minCellHeight: 5 },
+    /*  columnStyles: {
+        0: { cellWidth: 20, minCellHeight: 5}
       },
+      */
       headStyles: { fillColor: '#f2f2f2', textColor: '#000', fontStyle: 'bold', lineWidth: 0.5, lineColor: '#ccc' },
-      didDrawCell: function (hookData) {
-        if (hookData.section === 'body') {
-          if (hookData.row.index === 0) {
-            console.log(Object.values(hookData.row.cells));
-            for (const cell of Object.values(hookData.row.cells)) {
-              cell.styles.fontStyle = 'bold';
-              cell.styles.fillColor = [211, 211, 211];
-            }
-            //  doc.text("Page Title", hookData.settings.margin.top, 10);
-            doc.setFontSize(10).setFont('undefined', 'bold');
-            doc.text(
-              "USER DETAILS AND HISTORY",
-              85,
-              8
-            );
-          }
+      didParseCell(data) {
+        if (data.row.index === 0) {
+          data.cell.styles.textColor = [255, 255, 255];
+          data.cell.styles.fontStyle = 'bold';
+          data.cell.styles.fillColor = '#379AAE';
         }
-
+        doc.setFontSize(10).setFont('undefined', 'bold');
+        doc.text(
+          "USER DETAILS AND HISTORY",
+          85,
+          8
+        );
       },
+
 
     
 
