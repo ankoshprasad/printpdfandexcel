@@ -1,0 +1,28 @@
+<div class="container hometext">
+  <h4 id="mytable">Test Title</h4>
+  <div class="d-flex">
+    <div>
+      <table id="imgTable">
+        <tr>
+          <th>User Id</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Completed</th>
+        </tr>
+        <tr *ngFor="let datares of dataResult" class="border">
+          <td>{{datares.userId}}</td>
+          <td>{{datares.id}}</td>
+          <td>{{datares.title}}</td>
+          <td>{{datares.completed}}</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <button class="btn btn-primary" type="submit" (click)="generatePdf()">Generate Pdf</button>
+
+      <button (click)="exportToExcel($event)" class="ms-2 btn btn-primary">Export to excel</button>
+
+    </div>
+  </div>
+
+</div>

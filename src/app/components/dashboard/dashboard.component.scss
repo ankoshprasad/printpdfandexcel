@@ -1,0 +1,88 @@
+.search .form-control{
+    width:auto;
+}
+.close-icon{
+    font-size: 2em;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+.w-80vw{
+   width:30vw;
+}
+.btn-width{
+    width: 20rem;
+}
+.my_class{
+    display:none;
+}
+.min-vh-60{
+    min-height: 60vh!important;
+    box-shadow: 0px -4px 3px rgba(0 0 0 / 3%);
+}
+.custmbtn{
+    border-radius: 4px;
+    padding: 3px 10px;
+    background-color: steelblue;
+    border: none;
+    color: #FFF;
+}
+.custmbtn:hover,.submitbtn:hover{
+    background-color: #436785;
+}
+.custmbtnadd{
+    border-radius: 4px;
+    padding: 12px;
+    background-color: green;
+    border: none;
+    color: #FFF;
+}
+.custmbtnadd:hover{
+    background-color: #226022;
+}
+.submitbtn{
+    border-radius: 4px;
+    padding: 8px 14px;
+    background-color: steelblue;
+    border: none;
+    color: #FFF;
+}
+th{
+   width: 30%; 
+   color:#FFF;
+   font-size:17px;
+}
+tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+.cdk-header-row{
+    background-color: steelblue;
+    height:40px;
+}
+
+table{
+    box-shadow: 0 0 0 0 ;
+}
+.custmbtnadd:disabled {
+    background-color: #a2c7a8;
+    color: #fff;
+    border-color: #ccc;
+}
+.form-main h3{
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    height: 20%;
+}
+.pos-absolute{
+    position: absolute;
+    top:60px;
+    right:12px;
+}
+/* 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);*/
+
+
+th{
+    color:#000000;
+    font-weight: normal;
+}

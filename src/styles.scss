@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-mdc-dialog-surface.mdc-dialog__surface{
+padding:10px;
+}
+.cdk-overlay-pane{
+    width:35vw !important;
+}
+.bg-custom{
+    background:rgb(35,65,104);
+}
+.mat-mdc-table .mdc-data-table__row {
+    height: 40px;
+}
+mat-paginator {
+    color: green !important;
+  }
+
+

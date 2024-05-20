@@ -1,0 +1,34 @@
+<h1 mat-dialog-title>Dialog with elements</h1>
+<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
+<div class="container">
+    <legend>Job Portal</legend>
+    <div class="row">
+      <div class="col col-md-8" style="overflow-y: scroll; max-height: 100vh">
+        <form [formGroup]="jobForm" (ngSubmit)="save()">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              formControlName="firstName"
+            />
+          </div>
+          <div class="mb-3 test">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              formControlName="lastName"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col col-md-4">
+        <div style="position: fixed">{{ preview }}</div>
+      </div>
+    </div>
+  </div>
+<button type="submit" (click)="addUser()" mat-dialog-close  mat-button class="mt-5 btn btn-primary">Close</button>

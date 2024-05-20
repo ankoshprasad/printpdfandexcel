@@ -1,0 +1,27 @@
+<!--Filter Form-->
+<div class="container-fluid mt-3">
+    <h2>Document Types List</h2>
+    <form [formGroup]="getDataForm" class="" (ngSubmit)="submitExpired()">
+       
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Allow Expenses</th>
+          <th>Document Types Id</th>
+          <th>amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let documenttype of documenttypes; let i = index">
+          <td> <input class="form-check-input" type="checkbox"   value={{documenttype.month}} [checked]="documenttype.month"> {{documenttype.month}}</td>
+          <td>{{documenttype.id}}</td>
+          <td>{{documenttype.amount}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <button type="submit" #refreshData class="btn btn-primary">Update</button>
+
+</form>
+  </div>

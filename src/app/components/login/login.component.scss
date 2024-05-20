@@ -1,0 +1,20 @@
+.form-main{
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    height: 20%;
+}
+.login-bg{
+    background-color: #46b4af;
+    background-image: linear-gradient(#46b4af, #ccd3c6);
+}
+.bg-inner{
+background-color: #FFFFFF;
+}
+.btn-custom{
+    border-radius: 4px;
+    padding: 8px 14px;
+    background-color: #3fb574;
+    border: none;
+    color: #FFF;
+}

@@ -1,0 +1,23 @@
+<div class="container-fluid login-bg">
+  <div
+    class="row align-items-center justify-content-center"
+    style="min-height: 100vh">
+    <div class="col-md-4 bg-white p-4 rounded shadow">
+      <h1>Login to sampleproject</h1>
+      <p class="text-end text-danger" *ngIf="invalidMessage">Invalid Username or Password</p>
+      <div class="form-group col-md-12 mb-3">    
+        <label>Username</label>    
+        <input type="text" [(ngModel)]="username" name="username" class="form-control" />  
+        <div class="text-danger my-1" *ngIf="userValidation">Username Required</div>
+      </div>    
+      <div class="form-group col-md-12 mb-3">    
+        <label>Password</label>    
+        <input type="password" [(ngModel)]="password" name="password" class="form-control" />   
+        <div class="text-danger my-1" *ngIf="pwdValidation">Password Required</div> 
+      </div>    
+      <div class="form-group col-md-3">    
+        <button type="submit" (click)="login()" class="btn btn-custom">Login</button>    
+      </div>    
+    </div>
+  </div>
+</div>
